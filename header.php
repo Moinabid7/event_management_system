@@ -54,7 +54,8 @@ Author: CLASSIC EVENTS
 							@session_start();
 							if(isset($_SESSION['uname']))
 							{
-										echo "<a href='gallery.php'><button class='btn default'>BOOK YOUR EVENT </button></a> ";
+										echo "<a href='my_bookings.php'><button class='btn info'>📋 MY BOOKINGS</button></a> ";
+										echo "<a href='gallery.php'><button class='btn default'>🎉 BOOK EVENT</button></a> ";
 										echo "<a href='logout.php'><button class='btn warning'>LOGOUT</button></a>";
 							}
 							else
@@ -81,6 +82,9 @@ Author: CLASSIC EVENTS
 								</ul>
 							</li>
 							<li><a href="gallery.php" class="link link--yaku"><span>G</span><span>A</span><span>L</span><span>L</span><span>E</span><span>R</span><span>Y</span></a></li>
+							<?php if(isset($_SESSION['uname'])) { ?>
+								<li><a href="my_bookings.php" class="link link--yaku"><span>M</span><span>Y</span> <span>B</span><span>O</span><span>O</span><span>K</span><span>I</span><span>N</span><span>G</span><span>S</span></a></li>
+							<?php } ?>
 							<li><a href="contact.php" class="link link--yaku"><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span> <span>U</span><span>S</span></a></li>
 						</ul>		
 						<div class="clearfix"> </div>

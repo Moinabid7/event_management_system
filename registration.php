@@ -41,6 +41,13 @@ $qry = mysqli_query($con, "
 	}
 	
 ?>
+
+<script>
+function validate(form) {
+    // Additional form validation can be added here
+    return true;
+}
+</script>
 	
 	<div class="banner about-bnr">
 		<div class="container">
@@ -61,33 +68,33 @@ $qry = mysqli_query($con, "
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="focusedinput" class="col-sm-2 control-label">Surname</label>
+								<label for="surname" class="col-sm-2 control-label">Surname</label>
 								<div class="col-sm-8">
-									<input type="text" class="form-control1"  name="surnm" pattern="[A-Za-z\s]{2,30}" id="focusedinput" placeholder="Surname" required="">
+									<input type="text" class="form-control1"  name="surnm" pattern="[A-Za-z\s]{2,30}" id="surname" placeholder="Surname" required="">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="focusedinput" class="col-sm-2 control-label">User Name</label>
+								<label for="username" class="col-sm-2 control-label">User Name</label>
 								<div class="col-sm-8">
-									<input type="text" class="form-control1"  name="unm" id="focusedinput" placeholder="User Name" required="">
+									<input type="text" class="form-control1"  name="unm" id="username" placeholder="User Name" required="">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="smallinput" class="col-sm-2 control-label label-input-sm">Email</label>
+								<label for="email" class="col-sm-2 control-label label-input-sm">Email</label>
 								<div class="col-sm-8">
-									<input type="text" class="form-control1 input-sm" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter Proper Email Id" name="email" id="smallinput" placeholder="Email">
+									<input type="email" class="form-control1 input-sm" pattern="[a-z0-9._%\+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$" title="Enter Proper Email Id" name="email" id="email" placeholder="Email" required="">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputPassword" class="col-sm-2 control-label">Password</label>
 								<div class="col-sm-8">
-									<input type="password" class="form-control1" name="pswd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8.}" title="Must Cointain At Least One Number & One Uppercase & One Lowercase Letter, & At Least 8 Or More Characters" id="inputPassword" placeholder="Password" required="">
+									<input type="password" class="form-control1" name="pswd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase and one lowercase letter, and at least 8 characters" id="inputPassword" placeholder="Password" required="">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="smallinput" class="col-sm-2 control-label label-input-sm">Mobile no</label>
+								<label for="mobile" class="col-sm-2 control-label label-input-sm">Mobile no</label>
 								<div class="col-sm-8">
-									<input type="text" onkeydown="return onlyNumbers(event);" pattern="([7-9]{1})+([0-9]{9})" title="Only Number" class="form-control1 input-sm" name="mo" maxlength="10" id="smallinput" placeholder="Mobile no" required=""/>
+									<input type="tel" pattern="([7-9]{1})+([0-9]{9})" title="Only Number" class="form-control1 input-sm" name="mo" maxlength="10" id="mobile" placeholder="Mobile no" required=""/>
 								</div>
 							</div>
 							<div class="form-group">

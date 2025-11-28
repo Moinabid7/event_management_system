@@ -13,9 +13,8 @@
 				$name=$q[2];
 				$price=$q[3];
 			}
-				mysqli_query($con,"TRUNCATE TABLE temp");
-				mysqli_query($con,"DELETE FROM booking");
-				$qr1=mysqli_query($con,"insert into temp values('$id','$image','$name',$price)");
+			mysqli_query($con,"TRUNCATE TABLE temp");
+			$qr1=mysqli_query($con,"insert into temp values('$id','$image','$name',$price)");
 						if($qr1)
 						{
 							echo "<script> window.location.assign('cart.php');</script>";	

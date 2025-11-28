@@ -190,7 +190,7 @@ class AdvancedEmailSender {
                         <h4 style='color: #007cba; margin-top: 0;'>Booking Details:</h4>
                         <p><strong>Event Theme:</strong> {$eventDetails['theme_name']}</p>
                         <p><strong>Event Date:</strong> {$eventDetails['event_date']}</p>
-                        <p><strong>Price:</strong> ₹" . number_format($eventDetails['price']) . "</p>
+                        <p><strong>Price:</strong> " . number_format($eventDetails['price']) . "</p>
                         <p><strong>Customer Name:</strong> {$eventDetails['customer_name']}</p>
                         <p><strong>Contact Number:</strong> {$eventDetails['mobile']}</p>
                         <p><strong>Email:</strong> {$eventDetails['email']}</p>
@@ -245,7 +245,7 @@ class AdvancedEmailSender {
                         <p><strong>Mobile:</strong> {$eventDetails['mobile']}</p>
                         <p><strong>Event Theme:</strong> {$eventDetails['theme_name']}</p>
                         <p><strong>Event Date:</strong> <span class='highlight'>{$eventDetails['event_date']}</span></p>
-                        <p><strong>Total Price:</strong> <span class='highlight'>₹" . number_format($eventDetails['price']) . "</span></p>
+                        <p><strong>Total Price:</strong> <span class='highlight'>" . number_format($eventDetails['price']) . "</span></p>
                         <p><strong>Booking Time:</strong> " . date('Y-m-d H:i:s') . "</p>
                     </div>
                     
@@ -267,7 +267,7 @@ class AdvancedEmailSender {
         
         try {
             $logFile = __DIR__ . '/booking_logs.txt';
-            $logEntry = date('Y-m-d H:i:s') . " - New Booking: {$eventDetails['customer_name']} ({$eventDetails['email']}) - {$eventDetails['theme_name']} - ₹{$eventDetails['price']}\n";
+            $logEntry = date('Y-m-d H:i:s') . " - New Booking: {$eventDetails['customer_name']} ({$eventDetails['email']}) - {$eventDetails['theme_name']} - {$eventDetails['price']}\n";
             file_put_contents($logFile, $logEntry, FILE_APPEND | LOCK_EX);
             
             if (EMAIL_DEBUG) {

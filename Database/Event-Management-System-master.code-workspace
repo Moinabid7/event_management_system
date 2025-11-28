@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "Event-Management-System-master",
+			"path": "../../../../../Applications/MAMP/htdocs/Event-Management-System-master"
+		},
+		{
+			"name": "Database",
+			"path": "."
+		},
+		{
+			"name": "css",
+			"path": "../css"
+		}
+	],
+	"settings": {}
+}
