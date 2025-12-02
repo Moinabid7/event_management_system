@@ -55,36 +55,36 @@
 			<h3 class="w3ls-title1">Meet Our <span>Team</span></h3>
 			<div class="team-agileitsinfo">
 				<div class="col-md-3 about-team-grids">
-					<img src="images/jp.jpg" alt="" height="250" width="280"/>
+					<img src="images/Mo.jpeg" alt="" height="250" width="280"/>
 					<div class="team-w3lstext">
-						<h4><span>JAVGAL PATEL,</span> CEO</h4>
+						<h4><span>Moin Abid</span> CEO</h4>
 						</div>
 					<div class="social-icons caption"> 
 						<div class="clearfix"> </div>  
 					</div>
 				</div>
 				<div class=" col-md-3 about-team-grids">
-					<img src="images/mp.jpg" alt="" height="250" width="280"/>
+					<img src="" alt="" height="250" width="280"/>
 					<div class="team-w3lstext">
-						<h4><span>MOHIT PATEL,</span> Director</h4>
+						<h4><span>Naveen Kumar</span> Director</h4>
 						</div>
 					<div class="social-icons caption"> 
 						<div class="clearfix"> </div>  
 					</div>
 				</div>
 				<div class="col-md-3 about-team-grids">
-					<img src="images/drashti.jpg" alt="" height="250" width="280"/>
+					<img src="" alt="" height="250" width="280"/>
 					<div class="team-w3lstext">
-						<h4><span>DRASHTI,</span> Staff</h4>				
+						<h4><span>Shivaram Goud </span> Staff</h4>				
 						</div>
 					<div class="social-icons caption"> 
 						<div class="clearfix"> </div>  
 					</div>
 				</div>
 				<div class="col-md-3 about-team-grids">
-					<img src="images/kg.jpg" alt="" height="250" width="280"/>
+					<img src="" alt="" height="250" width="280"/>
 					<div class="team-w3lstext">
-						<h4><span>KHUSHALI,</span> Staff</h4>
+						<h4><span>Anvesh</span> Staff</h4>
 						</div>
 					<div class="social-icons caption"> 
 							<div class="clearfix"> </div>  
