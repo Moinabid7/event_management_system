@@ -5,6 +5,7 @@
 				<h3 class="w3ltitle">New<span> Designs</span></h3>
 				<p>Our company provides numerous varieties of themes which are unique and based upon new trend. Here some of our new launch.</p>
 			</div>
+			
 			<div class="col-md-9 project-left">
 				<!-- flex-slider -->
 				<div class="work-bottom">

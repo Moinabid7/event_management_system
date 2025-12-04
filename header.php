@@ -95,3 +95,6 @@ Author: CLASSIC EVENTS
 		</nav>		
 	</div>	
 	<!-- //header -->
+<?php
+		include_once("chatbot.php");
+	?>
